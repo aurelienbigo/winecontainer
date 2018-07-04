@@ -3,76 +3,91 @@ title: Wine Container - French Wine export worldwide.
 description: Get French wine container shipped to your country.
 ---
 
-<div id="home">
-  <div class="home-content">
-    <%= image_tag "logo.png", width: "250" %>
-    <p>
-      French wine export solution.
-    </p>
+<div class="banner" style="background-image: url(<%= image_path 'wine-container-home.jpg'%>);">
+  <div id="home">
+    <div class="home-content">
+      <h1>WINE EXPORT SOLUTION.</h1>
+     <h2>For Wine Professional Worlwide.</h2>
+      <div class="catch-content">
+        <%= link_to "About us", "#about", class: "home-btn btn btn-primary btn-contact" %>
+        <%= link_to "Contact us", "#form", class: "home-btn btn btn-primary btn-contact" %>
+      </div>
+    </div>
+  </div>
+</div>
 
  <div class="row">
       <div class="col-xs-12 container-card" align="center">
         <div class="col-md-4 card-home">
           <%= image_tag "choose.png", width: "200" %>
-          <h2>Choose</h2>
-          <p>Choose bottles from our large trange of wines from our exclusive partner Cuvelier & Fauvarque.</p>
+          <h2>Find</h2>
+          <p>Find the bottles you would like to import, from our large range of wines from our exclusive partner Cuvelier & Fauvarque.</p>
         </div>
 
         <div class="col-md-4 card-home">
           <%= image_tag "build.png", width: "200" %>
-          <h2>Build</h2>
-          <p>Build your own "on demand" palette. Mix & Match wines from all regions.</p>
+          <h2>Choose</h2>
+          <p>Choose the quantity you need. You can build your own "on demand" container. Mix & Match wines from all regions.</p>
         </div>
 
         <div class="col-md-4 card-home">
           <%= image_tag "ship.png", width: "200" %>
-            <h2>Get it ready</h2>
-            <p>Get it delivered to your country. We ship worlwide.</p>
+            <h2>Import</h2>
+            <p>Our qualified team will prepare and get it delivered to your country. We ship worlwide.</p>
         </div>
       </div>
     </div>
 
 
-  <div class="contact-form col-xs-12 col-sm-offset-3 col-sm-6 formulaire">
-    <div class="form-area">
-      <form action="https://getsimpleform.com/messages?form_api_token=11f8878eae9046772298fffc4d2e7972" method="post">
-        <!-- ne pas oublier de modifier la redirection et le token correspondant à l'adresse olb -->
-        <input type='hidden' name='redirect_to' value='/thanks.html' />
+<div class="row">
+  <div id="form">
+    <div class="contact-form col-xs-12 col-sm-offset-3 col-sm-6 formulaire">
+
+      <form
+        onsubmit="setTimeout(function(){window.location.href='https://wine-palette.herokuapp.com/files/pricelist-winepalette.pdf';},10)" action="https://liveformhq.com/form/9360694e-dcec-4825-aedd-cbaaaa8cf791"
+        method="POST" accept-charset="utf-8" role=form>
 
         <br style="clear:both">
-          <h3 style="margin-bottom: 25px; text-align: center;">Download price list</h3>
+          <h4 style="margin-bottom: 25px; text-align: center;">Download our full pricelist</h4>
 
-        <div class="form-group">
-          <input type="text" class="form-control" id="nom" name="Nom" placeholder="Name" required>
-        </div>
-
-        <div class="form-group">
-          <input type="text" class="form-control" id="societe" name="Société" placeholder="Company" required>
+        <div class='form-group'>
+          <label for="name"></label>
+          <input class='form-control' type="text" id="name" name="name" placeholder="Name" required>
         </div>
 
-        <div class="form-group">
-          <input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
-        </div>
-        <div class="form-group">
-          <input type="text" class="form-control" id="telephone" name="telephone" placeholder="Phone number" required>
-        </div>
-        <div class="form-group">
-          <input type="text" class="form-control" id="sujet" name="sujet" placeholder="Subject" required>
-        </div>
-        <div class="form-group">
-          <textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="250" rows="7"></textarea>
+        <div class='form-group'>
+          <label for="company"></label>
+          <input class='form-control' type="text" id="company" name="company" placeholder="Company" required>
         </div>
 
-        <button type="submit" id="submit" name="submit" class="btn btn-primary btn-contact">Submit
-        </button>
+        <div class='form-group'>
+          <label for="email"></label>
+          <input class='form-control' type="text" id="email" name="email" placeholder="Email" required>
+        </div>
+
+        <div class='form-group'>
+          <label for="telephone"></label>
+          <input class='form-control' type="text" id="telephone" name="telephone" placeholder="Phone number" required>
+        </div>
+
+        <div class='form-group'>
+          <label for="message"></label>
+          <textarea class='form-control' id="message" name="message" placeholder="Message" rows="7" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary pull-right btn-cnt" >Submit</button>
       </form>
-
     </div>
-  </div>
-
-
-
-    </div>
-
   </div>
 </div>
+<div class="container">
+<div id="about">
+<div class="row">
+  <div class="about-container">
+      <h3>Wine Container - The wine export solution.</h3>
+      <p>Wine Container is the export subsidiary for Cuvelier & Fauvarque (French quality wine merchant since 1787 in the North of France). It offers the ability to wine sellers all around the world to become French wine importers, by mixing and matching pallets and containers with French wines coming from all regions, and bought from one provider.</p>
+  </div>
+</div>
+</div>
+</div>
+
