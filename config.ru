@@ -28,3 +28,8 @@ run lambda { |env|
     File.open("build/404/index.html", File::RDONLY)
   ]
 }
+
+# Force SSL
+unless ENV["DEV_ENV"]
+  use Rack::SSL
+end
