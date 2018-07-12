@@ -1,5 +1,6 @@
 require "rack"
 require "rack/contrib/try_static"
+require 'rack/ssl'
 
 # Enable proper HEAD responses
 use Rack::Head
