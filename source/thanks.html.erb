@@ -1,15 +1,12 @@
----
-title: Thank you - Wine Container.
----
+<div class="container">
+<h3>Thank you for your interest !</h3>
 
-<div id="about">
-  <div class="about-content">
-   <p>Thank you for your message. You can click the link below to download our price list.</p>
+<p>Please find the price list below.</p>
 
-  <div class="button">
-    <%= link_to "Download pricelist", "/files/pricelist.pdf", class: "btn btn-primary btn-contact" %>
-  </div>
+<object data="/files/pricelist-container.pdf" type="application/pdf" class="pdf">
+  <embed src="/files/pricelist-container.pdf" type="application/pdf" />
+</object>
 
+<a href="/" class="btn btn-primary btn-cnt">Back to home page</a>
 
-  </div>
 </div>
